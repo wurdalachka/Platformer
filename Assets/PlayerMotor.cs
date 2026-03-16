@@ -6,17 +6,18 @@ public class PlayerMotor : MonoBehaviour
     Vector2 direction;
     float speed = 10;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
+   
         
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         transform.position += new Vector3(direction.x, direction.y, 0) * Time.deltaTime * speed;
     }
-    void OnMove(InputValue value)
+    private void OnMove(InputValue value)
     {
         //Debug.Log("Move");
         //Debug.Log(value.Get<Vector2>());
