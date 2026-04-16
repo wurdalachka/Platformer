@@ -6,9 +6,14 @@ public class healthcomponent : MonoBehaviour
 
     public float maxHealth = 10;
 
+
+    public delegate void OnHealthChangeHandler(float newHealth, float amountChanged);
+    public event OnHealthChangeHandler OnHealthChanged;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+       
     }
 
     // Update is called once per frame
@@ -19,7 +24,7 @@ public class healthcomponent : MonoBehaviour
     public void AddDamage(float damage)
     {
         health -= damage;
-        Debug.Log(health);
+        //Debug.Log(health);
 
         if (health <= 0)
         {
@@ -30,11 +35,12 @@ public class healthcomponent : MonoBehaviour
     public void AddHealth(float healingValue)
     {
         health += healingValue;
+        OnHealthChanged?.Invoke(maxHealth, health);
 
         if (health >= maxHealth)
         {
             health = maxHealth;
         }
-        Debug.Log(health);
+        //Debug.Log(health);
     }
 }
