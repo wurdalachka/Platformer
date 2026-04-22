@@ -10,8 +10,9 @@ public class healthcomponent : MonoBehaviour
 
     public delegate void OnHealthIntializedHandler(float newHealth);
     public delegate void OnHealthChangeHandler(float newHealth, float amountChanged);
-    public event OnHealthIntializedHandler OnHealthIntialized;
     public event OnHealthChangeHandler OnHealthChanged;
+    public event OnHealthIntializedHandler OnHealthIntialized;
+   
 
 
 
@@ -33,9 +34,9 @@ public class healthcomponent : MonoBehaviour
         if (!invicibility)
         {
             health -= damage;
-            OnHealthIntialized?.Invoke(health);
+            OnHealthChanged?.Invoke(health, damage);
             invicibility = true;
-            StartCoroutine(ResetInvincibility(3));
+            StartCoroutine(ResetInvincibility(1));
         }
 
 
@@ -44,12 +45,12 @@ public class healthcomponent : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        OnHealthIntialized?.Invoke(health);
+        OnHealthChanged?.Invoke(health, - damage);
     }
     IEnumerator ResetInvincibility(float resetTime)
         {
             yield return new WaitForSeconds(resetTime);
-            Debug.Log("Reset");
+            invicibility = false;
         }
 
 
@@ -57,14 +58,14 @@ public class healthcomponent : MonoBehaviour
 public void AddHealth(float healingValue)
     {
         health += healingValue;
-        OnHealthChanged?.Invoke(maxHealth, health);
+     
 
         if (health >= maxHealth)
         {
             health = maxHealth;
             
         }
-
+        OnHealthChanged?.Invoke(maxHealth, health);
 
         //Debug.Log(health);
     }
