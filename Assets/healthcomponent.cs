@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem.Processors;
+using UnityEngine.SceneManagement;
 
 public class healthcomponent : MonoBehaviour
 {
@@ -43,7 +45,7 @@ public class healthcomponent : MonoBehaviour
 
             if (health <= 0)
         {
-            Destroy(this.gameObject);
+             SceneManager.LoadScene("dead screen");
         }
         OnHealthChanged?.Invoke(health, - damage);
     }
