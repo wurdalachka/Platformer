@@ -11,6 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main screen.unity
     guid: 6d644d3d55681894cb50c8295b9bfb0c
+  - enabled: 1
+    path: Assets/Scenes/dead screen.unity
+    guid: 8774202025693054ab3f8b6908111f50
+  - enabled: 1
+    path: Assets/Scenes/level 2.unity
+    guid: 5168f668ed6fed84e9d5c00761238716
+  - enabled: 1
+    path: Assets/Scenes/level 3.unity
+    guid: d7b1fa7241d3bf84cafc98f9ecdbef56
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
