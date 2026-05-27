@@ -1742,6 +1742,7 @@ MonoBehaviour:
   jumpforce: 6
   maxspeed: 5
   stoppingforce: 7
+  dashForce: 20
 --- !u!114 &1258739637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2607,7 +2608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevelName: level 1
+  NextLevelName: dead screen
 --- !u!61 &1817262410
 BoxCollider2D:
   m_ObjectHideFlags: 0

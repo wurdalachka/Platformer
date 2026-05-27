@@ -45,7 +45,7 @@ public class healthcomponent : MonoBehaviour
 
             if (health <= 0)
         {
-             SceneManager.LoadScene("dead screen");
+            SceneManager.LoadScene("dead screen");
         }
         OnHealthChanged?.Invoke(health, - damage);
     }
