@@ -4788,7 +4788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevelName: level 2
+  NextLevelName: dead screen
 --- !u!61 &1272467656
 BoxCollider2D:
   m_ObjectHideFlags: 0
