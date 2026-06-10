@@ -130,11 +130,7 @@ public class playermotor : MonoBehaviour
         
     }
 
-    public void ResetAfterDamage()
-    {
-    canJump = true;
-    animator.SetBool("isJumping", false);
-    } 
+     
 }
 
 

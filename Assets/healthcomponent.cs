@@ -38,7 +38,6 @@ public class healthcomponent : MonoBehaviour
             health -= damage;
             OnHealthChanged?.Invoke(health, damage);
             invicibility = true;
-            GetComponent<playermotor>()?.ResetAfterDamage();
             StartCoroutine(ResetInvincibility(1));
         }
 
