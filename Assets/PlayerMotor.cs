@@ -29,23 +29,25 @@ public class playermotor : MonoBehaviour
         UpdateAnimations();
     }
 
-    private bool IsGrounded()
+   private bool IsGrounded()
     {
-    return Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - 0.8f), 0.5f);
+    return Physics2D.OverlapCircle(
+        new Vector2(transform.position.x, transform.position.y - 0.8f), 
+        0.5f, 
+        groundLayer);
     }
 
     private void UpdateAnimations()
-    {
-        animator.SetFloat("xVelocity", Mathf.Abs(rigidbody2d.linearVelocityX));
-        animator.SetFloat("yVelocity", rigidbody2d.linearVelocityY);
-        animator.SetBool("isJumping", !IsGrounded());
+   {
+    animator.SetFloat("xVelocity", Mathf.Abs(rigidbody2d.linearVelocityX));
+    animator.SetFloat("yVelocity", rigidbody2d.linearVelocityY);
+    animator.SetBool("isJumping", !IsGrounded());
 
-        if (direction.x != 0)
-            lastDirection = -Mathf.Sign(direction.x);
+    if (direction.x != 0)
+        lastDirection = -Mathf.Sign(direction.x);
 
-        transform.localScale = new Vector3(lastDirection * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+    transform.localScale = new Vector3(lastDirection * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
     }
-
     private void HandlePlayerMovement()
     {
         if (direction.x != 0)
@@ -100,6 +102,7 @@ public class playermotor : MonoBehaviour
             rigidbody2d.AddForce(Vector2.up * jumpforce, ForceMode2D.Impulse);
         }
     }
+
 
 }
 

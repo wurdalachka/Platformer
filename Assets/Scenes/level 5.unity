@@ -669,7 +669,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515042182}
   - component: {fileID: 515042181}
-  - component: {fileID: 515042180}
+  - component: {fileID: 515042183}
   m_Layer: 0
   m_Name: death zone (1)
   m_TagString: Untagged
@@ -677,19 +677,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &515042180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 515042179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextLevelName: dead screen
 --- !u!61 &515042181
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -751,6 +738,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &515042183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515042179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577ef44c0d329404094612524b81449e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1001 &538210617
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1073,7 +1073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625958838}
   - component: {fileID: 625958837}
-  - component: {fileID: 625958836}
+  - component: {fileID: 625958839}
   m_Layer: 0
   m_Name: death zone (3)
   m_TagString: Untagged
@@ -1081,19 +1081,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &625958836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625958835}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextLevelName: dead screen
 --- !u!61 &625958837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1155,6 +1142,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &625958839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625958835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577ef44c0d329404094612524b81449e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1001 &661475962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1643,7 +1643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923435009}
   - component: {fileID: 923435008}
-  - component: {fileID: 923435007}
+  - component: {fileID: 923435010}
   m_Layer: 0
   m_Name: death zone
   m_TagString: Untagged
@@ -1651,19 +1651,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &923435007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923435006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextLevelName: dead screen
 --- !u!61 &923435008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1725,6 +1712,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923435010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923435006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577ef44c0d329404094612524b81449e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!114 &956830284 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8868496595409438259, guid: 44ba28d2b81f627498014c2aa7d1192a, type: 3}
@@ -1814,7 +1814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1066796411}
   - component: {fileID: 1066796410}
-  - component: {fileID: 1066796409}
+  - component: {fileID: 1066796412}
   m_Layer: 0
   m_Name: death zone (2)
   m_TagString: Untagged
@@ -1822,19 +1822,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1066796409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1066796408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextLevelName: dead screen
 --- !u!61 &1066796410
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1896,6 +1883,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1066796412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066796408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577ef44c0d329404094612524b81449e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1 &1079490958
 GameObject:
   m_ObjectHideFlags: 0

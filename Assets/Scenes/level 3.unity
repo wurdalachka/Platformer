@@ -4584,7 +4584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923435009}
   - component: {fileID: 923435008}
-  - component: {fileID: 923435007}
+  - component: {fileID: 923435010}
   m_Layer: 0
   m_Name: death zone
   m_TagString: Untagged
@@ -4592,19 +4592,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &923435007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 923435006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc31a6c7d473c9f468404693cd359131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NextLevelName: dead screen
 --- !u!61 &923435008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4660,12 +4647,25 @@ Transform:
   m_GameObject: {fileID: 923435006}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.47359, y: -4.37, z: 0}
+  m_LocalPosition: {x: -0.47359, y: -4.49, z: 0}
   m_LocalScale: {x: 34.38003, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &923435010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923435006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577ef44c0d329404094612524b81449e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
 --- !u!1 &990666480
 GameObject:
   m_ObjectHideFlags: 0

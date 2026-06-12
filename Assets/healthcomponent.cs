@@ -43,11 +43,12 @@ public class healthcomponent : MonoBehaviour
 
 
 
-            if (health <= 0)
-        {
-            SceneManager.LoadScene("dead screen");
-        }
-        OnHealthChanged?.Invoke(health, - damage);
+          if (health <= 0)
+           {
+           PlayerPrefs.SetString("lastScene", SceneManager.GetActiveScene().name);
+           PlayerPrefs.Save();
+           SceneManager.LoadScene("dead screen");
+          }
     }
     IEnumerator ResetInvincibility(float resetTime)
         {

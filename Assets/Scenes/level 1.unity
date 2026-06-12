@@ -472,50 +472,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &740114469
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 740114471}
-  - component: {fileID: 740114470}
-  m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!156049354 &740114470
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740114469}
-  m_Enabled: 1
-  m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
---- !u!4 &740114471
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 740114469}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &851908271
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5187,18 +5143,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 5443022273869379926, guid: 44ba28d2b81f627498014c2aa7d1192a, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0.37254903
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443022273869379926, guid: 44ba28d2b81f627498014c2aa7d1192a, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0.25490198
-      objectReference: {fileID: 0}
-    - target: {fileID: 5443022273869379926, guid: 44ba28d2b81f627498014c2aa7d1192a, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0.24313726
-      objectReference: {fileID: 0}
     - target: {fileID: 8481864109542317712, guid: 44ba28d2b81f627498014c2aa7d1192a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.6
@@ -5486,7 +5430,6 @@ SceneRoots:
   - {fileID: 2674862310615690328}
   - {fileID: 2665628403329995170}
   - {fileID: 145242213}
-  - {fileID: 740114471}
   - {fileID: 5181265371523510434}
   - {fileID: 460272492}
   - {fileID: 878751807}
