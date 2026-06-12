@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 229373738}
   - component: {fileID: 229373742}
   - component: {fileID: 229373741}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4930,7 +4930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1316053019450191060, guid: 64fb19a773ded144f98fac42bed76000, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.515909
+      value: 8.12
       objectReference: {fileID: 0}
     - target: {fileID: 1316053019450191060, guid: 64fb19a773ded144f98fac42bed76000, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4991,7 +4991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 912219714808713694, guid: bf8543af45fdfe04dace7dc84c09277a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.882
+      value: -2.55
       objectReference: {fileID: 0}
     - target: {fileID: 912219714808713694, guid: bf8543af45fdfe04dace7dc84c09277a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5503,7 +5503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1944875372}
   - component: {fileID: 1944875371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
